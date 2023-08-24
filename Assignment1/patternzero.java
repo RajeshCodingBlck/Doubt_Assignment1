@@ -13,9 +13,6 @@ public class patternzero {
 		
 		int nst=1;
 		
-		int a=0;
-		int b=1;
-		
 		 while(row<=n) {
 			 
 			 // star
@@ -23,11 +20,13 @@ public class patternzero {
 			 int i=1;
 			 
 			 while(i<=nst) {
-				 System.out.print(a+"\t");
-				 int c=a+b;
-				 a=b;
-				 b=c;
+//				 System.out.print("*"+"\t");
 				 
+				 if(i==1 || i==nst) {
+					 System.out.print(row+" ");
+				 }else {
+					 System.out.print(0+" ");
+				 }
 				 i++;
 			 }
 			 
